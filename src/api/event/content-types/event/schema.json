@@ -4,7 +4,7 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "event",
+    "displayName": "Eventos",
     "description": ""
   },
   "options": {
@@ -12,23 +12,23 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "tittle": {
+    "titulo": {
       "type": "string",
       "required": true
     },
-    "description": {
+    "descricao": {
       "type": "richtext",
       "required": false
     },
-    "eventDate": {
+    "data_do_evento": {
       "type": "date",
       "required": true
     },
-    "eventPlace": {
+    "local_do_evento": {
       "type": "string",
       "required": true
     },
-    "eventPhotos": {
+    "fotos_do_evento": {
       "type": "media",
       "multiple": true,
       "required": true,
@@ -42,7 +42,7 @@
       "target": "api::category.category",
       "inversedBy": "events"
     },
-    "featureImage": {
+    "imagem_principal": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -52,10 +52,9 @@
     },
     "slug": {
       "type": "uid",
-      "targetField": "tittle",
       "required": true
     },
-    "Nomes": {
+    "nomes": {
       "type": "string",
       "required": true
     }

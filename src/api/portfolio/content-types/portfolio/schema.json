@@ -12,14 +12,13 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "portfolioName": {
+    "nome_do_portifolio": {
       "type": "string"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "portfolioName"
+      "type": "uid"
     },
-    "portfolioGallery": {
+    "fotos_da_galeria": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -35,11 +34,11 @@
       "relation": "oneToOne",
       "target": "api::category.category"
     },
-    "show_in_home": {
+    "mostrar_na_home": {
       "type": "boolean",
       "default": false
     },
-    "featureImage": {
+    "imagem_principal": {
       "type": "media",
       "multiple": false,
       "required": true,

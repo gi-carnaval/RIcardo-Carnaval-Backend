@@ -4,7 +4,7 @@
   "info": {
     "singularName": "category",
     "pluralName": "categories",
-    "displayName": "category",
+    "displayName": "Categorias",
     "description": ""
   },
   "options": {
@@ -12,17 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "categoryName": {
+    "nome": {
       "type": "string",
       "required": true,
       "unique": true
     },
-    "categoryDescription": {
+    "descricao": {
       "type": "richtext"
     },
     "slug": {
-      "type": "uid",
-      "targetField": "categoryName"
+      "type": "uid"
     },
     "events": {
       "type": "relation",
@@ -30,7 +29,7 @@
       "target": "api::event.event",
       "mappedBy": "categories"
     },
-    "featureImage": {
+    "imagem_principal": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -41,7 +40,7 @@
         "audios"
       ]
     },
-    "show_in_home": {
+    "mostrar_na_home": {
       "type": "boolean",
       "default": false
     }
